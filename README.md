@@ -13,10 +13,6 @@ All the Information of the Voter or Candidate is to be filling in manually.
 Voter must be present in his/her Constituency to give his/her Vote.
 There are Electronic Voting Machines used which Takes More Cost.
 
-#### Online Voting Process:-
-
-<img src="https://github.com/shubham9768/Online-Voting-System/blob/master/pic.png">
-
 #### Need For the System:-
 It was decided to Computerize the System in order to overcome the following problems:-
 
