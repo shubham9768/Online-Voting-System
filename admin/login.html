@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+    <head>
+	   
+ 
+   	<title>Administrator Login</title>
+        <style>
+ 
+html{    background:url(bg.png) no-repeat;
+  background-size: cover;
+  height:100%;
+}
+div.container{
+display:inline-block;
+}
+
+#form-main{
+	width:100%;
+	 
+	float:left;
+	padding-top:0px;
+}
+h1
+{
+	margin-top:10px;
+	color:white;
+	text-align:center;
+	font-size:50px;
+	margin-bottom:20px;
+}
+#form-div {
+	background-color:rgba(72,72,72,0.4);
+	padding-left:35px;
+	padding-right:35px;
+	padding-top:35px;
+	padding-bottom:50px;
+	width: 450px;
+	height:300px;
+	float: left;
+	left: 52%;
+	position: absolute;
+  margin-top:30px;
+	margin-left: -260px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+}
+
+.feedback-input {
+	color:#3c3c3c;
+	font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+	background: #fff;
+	box-shadow: 0;
+	border: 3px solid #0000cc;
+	color: #000000;
+	outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+	color:#30aed6;
+	border:#30aed6 solid 3px;
+}
+
+ 
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	background-color:white;
+}
+
+#button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+border: black solid 3px;
+	cursor:pointer;
+	background-color: rgba(0,0,0,0);
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: maroon;
+}
+	
+.submit:hover {
+	color: black;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: green;
+	-webkit-transition: .8s ease;
+	-moz-transition: .8s ease;
+	-o-transition: .8s ease;
+	-ms-transition: .8s ease;
+	transition: .8s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:orange;
+}
+
+@media only screen and (max-width: 580px) {
+	#form-div{
+		left: 3%;
+		margin-right: 3%;
+		width: 88%;
+		margin-left: 0;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+}
+      
+
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+ background:url(light-blue-wallpaper.jpg ) no-repeat;
+  background-size: cover;
+  height:100%;
+}
+
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+.ch{
+	margin-left:10px;
+}
+        </style>
+         
+   </head>
+
+ 
+
+<link href="css/admin_styles.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/admin.js"></script>
+ 
+<center><b>
+<img src = "the-emblem-of-india.png" height="150" width="150"></a><br>
+
+<font color = "blue" size="8">ONLINE VOTING SYSTEM</font></b></center>  
+ 
+<div class="news"><marquee><font size="4" color="red">Administration Control pannel...!! Only Access to ADMIN...</marquee></div></font>
+</div>
+<center><b><font color = "maroon" size="6">Administrator Login</font></b></center>  
+
+
+<div id="form-main">
+  <div id="form-div">
+ 	<form name="form1" method="post" action="checklogin.php" onsubmit="return loginValidate(this)">
+  
+   <p class="name">
+        <input name="myusername" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Username/Email" id="myusername" />
+      </p>
+      
+      <p class="text">
+        <input type="password" name="mypassword" class="validate[required,length[6,300]] feedback-input" id="mypassword" placeholder="Password"/>
+      </p>
+
+           
+      <div class="submit">
+        <input type="submit" name="Submit" value="LOGIN" id="button-blue"/>
+        <div class="ease"></div>
+      </div>
+
+	
+    </form>
+  </div>
+  </div>
+
+<center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><font size=3 color="black">Return to : <a href="/files1/home.html"><b> <font size=5 color="maroon">Home </b></a>
+</center>
+</div>
+<div id="footer">
+ <div class="bottom_addr">&copy; 2016 Online voting system.@ All Rights Reserved</div>
+</div>
+</div>
+</body></html>
